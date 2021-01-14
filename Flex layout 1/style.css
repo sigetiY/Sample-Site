@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+.main{
+    display: flex;
+    flex: 1;
+    
+}
+.main article{
+    flex: 1;
+    order: 1; /*means objects position in order at the screen*/
+}
+.main nav{
+    background: #b3e5ab;
+    order: 3;
+}
+.main aside{
+    background: beige;
+    order: 2;
+    
+}
+.main nav,
+.main aside{
+    flex: 0 0 20vh;
+}
+header, footer{
+    background: yellowgreen;
+    height: 20vh;
+}
